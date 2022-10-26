@@ -1,6 +1,9 @@
+  var mic
 function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES)
+  mic= new p5.AudioIn();
+  mic.start();
 }
 
 function draw() {
